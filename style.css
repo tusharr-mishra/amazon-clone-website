@@ -1,0 +1,484 @@
+/* ============================================================
+   AMAZON CLONE — style.css
+   Sections:
+     1. Universal / Reset
+     2. Navbar
+     3. Search Bar
+     4. Panel / Sub-navigation
+     5. Hero Section
+     6. Shop / Product Cards
+     7. Footer
+   ============================================================ */
+
+
+/* ============================================================
+   1. UNIVERSAL / RESET
+   ============================================================ */
+
+/*
+  box-sizing: border-box means padding and border are included
+  inside the element's width/height — prevents unexpected overflow.
+  Note: your original wrote "border: border-box" which is a typo;
+  the correct property is "box-sizing".
+*/
+* {
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: border-box;
+}
+
+/*
+  .border is a reusable utility class on navbar items.
+  A transparent border is set by default so the element does
+  not shift when a white border appears on hover.
+*/
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+
+/* ============================================================
+   2. NAVBAR
+   ============================================================ */
+
+/*
+  display: flex + align-items: center places all nav items
+  on one row, vertically centered.
+  justify-content: space-evenly gives equal spacing between items.
+*/
+.navbar {
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+/* background-size: cover scales the logo to fill its container */
+.logo {
+    background-image: url("amazon-logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+/* Delivery address */
+.first {
+    color: #CCCCCC;
+    font-size: 0.85rem;    /* rem scales with root font size — better for responsiveness */
+    margin-left: 23px;     /* aligns "Deliver to" above "India" */
+}
+
+.second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+/* Flexbox places the pin icon and "India" text side by side */
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Sign In / Returns shared font styles */
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second-reuse {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Cart */
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85 rem;
+    font-weight: 700;
+}
+
+/* Language selector */
+.lang-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1.5px solid transparent;
+}
+
+.lang-box img {
+    width: 20px;
+    height: 14px;
+}
+
+.lang-box i {
+    font-size: 10px;
+}
+
+/*
+  .lang-box:hover targets the box itself.
+  .lang-box :hover (with space) would target children — not what we want.
+*/
+.lang-box:hover {
+    border: 1.5px solid white;
+}
+
+
+/* ============================================================
+   3. SEARCH BAR
+   ============================================================ */
+
+/*
+  The search bar is a flex row: select + input + icon button.
+  The fixed width of 635px matches the original design.
+*/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    width: 635px;
+    height: 40px;
+}
+
+/* Orange border highlights the entire search bar on hover */
+.nav-search:hover {
+    border: 3.5px solid orange;
+}
+
+.select-search {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /* transition smooths the background color change on hover */
+    transition: background-color 0.2s ease;
+}
+
+.select-search:hover {
+    background-color: #e2e2e2;
+}
+
+/* width: 100% makes the input fill all remaining flex space */
+.select-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #febd68;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #0F1111;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: #f3a847;
+}
+
+
+/* ============================================================
+   4. PANEL / SUB-NAVIGATION
+   ============================================================ */
+
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* display: inline keeps panel links on the same row */
+.panel-options p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-options {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals {
+    font-size: 0.95 rem;
+    font-weight: 700;
+}
+
+
+/* ============================================================
+   5. HERO SECTION
+   ============================================================ */
+
+/*
+  background-size: cover scales the image to fill the container
+  while keeping its aspect ratio — some edges may crop.
+  align-items: flex-end pushes the message bar to the bottom.
+*/
+.hero-image {
+    background-image: url("https://m.media-amazon.com/images/I/61Z5DaOEVeL._SX3000_.jpg");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-message {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+    width: 95%;
+    margin-bottom: 150px;
+}
+
+.hero-message a {
+    color: #007185;
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   6. SHOP / PRODUCT CARDS
+   ============================================================ */
+
+/*
+  flex-wrap: wrap allows cards to flow onto the next row
+  when there is not enough horizontal space — makes the grid responsive.
+*/
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #c4d9c5;
+}
+
+.shop-section:hover {
+    cursor: pointer;
+}
+
+.box {
+    height: 400px;
+    width: 23%;
+    background-color: #ffffff;
+    padding: 25px 0px 40px;
+    margin-top: 15px;
+}
+
+/* background-size: cover fills each card image without stretching */
+.box-image {
+    height: 350px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.box-content h2 {
+    margin-bottom: 10px;
+}
+
+.box-content p {
+    color: #007185;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+/* ============================================================
+   7. FOOTER
+   ============================================================ */
+
+/* Sign-in recommendation panel */
+.foot-panel1 {
+    background-color: #f3f3f3;
+    padding: 30px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.rec-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.rec-btn {
+    background-color: #ffd814;
+    border: none;
+    padding: 10px 80px;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.rec-btn:hover {
+    background-color: #f7ca00;
+}
+
+.rec-small {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.rec-small a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.rec-small a:hover {
+    text-decoration: underline;
+}
+
+/* Back to top bar */
+.foot-panel2 {
+    background-color: #37475A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Footer links — four columns using flexbox */
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 10px 0px 10px;
+}
+
+.foot-panel3 a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.foot-panel3 a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 25px;
+}
+
+/* display: block puts each footer link on its own line */
+ul a {
+    display: block;
+    margin-top: 17px;
+    color: #DDDDDD;
+}
+
+/* Footer logo + locale selectors */
+.foot-panel4 {
+    background-color: #232f3e;
+    border-top: 1px solid #3a4553;
+    padding: 20px 0;
+    color: white;
+}
+
+/* Flexbox centers the logo and locale boxes horizontally */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.foot-logo {
+    background-image: url("amazon-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100px;
+}
+
+.three-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.foot-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 10px;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.foot-box img {
+    width: 18px;
+}
+
+/* Copyright bar */
+.foot-panel5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    background-color: #131A22;
+    color: white;
+}
+
+.foot-pages a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+.foot-pages a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-message {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 1rem;
+}

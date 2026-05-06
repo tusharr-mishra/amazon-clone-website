@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com. Spend less. Smile more.</title>
+    <!-- Font Awesome icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header>
+
+        <!-- NAVBAR -->
+        <div class = "navbar">
+
+            <!-- Logo -->
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <!-- Delivery Address -->
+            <div class="nav-address border">
+                <p class = "first">Deliver to</p>
+                <!-- Flexbox aligns the location icon and "India" on the same line -->
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class = "second">India</p>
+                </div>
+            </div>
+
+            <!-- Search Bar: select + input + icon combined using flexbox -->
+            <div class="nav-search">
+                <select class = "select-search">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class = "select-input">
+                <div class="search-icon">
+                    <i class="fa-brands fa-sistrix"></i>
+                </div>
+            </div>
+
+            <!-- Language Selector -->
+            <div class="lang-box border">
+                <img src="https://flagcdn.com/w20/us.png" alt="US Flag">
+                <span>EN</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <!-- Sign In -->
+            <div class = "nav-signin border">
+                <p> <span class = "ONE"> Hello, sign in </span> </p>
+                <p class = "nav-second-reuse"> Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+
+            <!-- Returns & Orders -->
+            <div class = "nav-returns border">
+                <p> <span class = "ONE"> Returns </span> </p>
+                <p class = "nav-second-reuse"> & Orders </p>
+            </div>
+
+            <!-- Cart -->
+            <div class = "nav-cart border">
+                <i class="fa-sharp fa-solid fa-cart-arrow-down"></i>
+                Cart
+            </div>
+
+        </div>
+        <!-- END NAVBAR -->
+
+        <!-- PANEL / SUB-NAVIGATION -->
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-options">
+                <p class = "border">Today's Deals</p>
+                <p class = "border">Gift Cards</p>
+                <p class = "border">Sell</p>
+                <p class = "border">Registry</p>
+                <p class = "border">Prime Video</p>
+                <p class = "border">Customer Service</p>
+            </div>
+            <div class="panel-deals border">
+                Shop Deals in Electronics
+            </div>
+        </div>
+        <!-- END PANEL -->
+
+    </header>
+    <!-- ==================== END HEADER ==================== -->
+
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <!-- background-size: cover fills the full div with the image without distortion -->
+    <div class="hero-image">
+        <div class="hero-message">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href = https://www.amazon.in/?ref=aisgw_intl_stripe_in">Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+    <!-- ==================== END HERO SECTION ==================== -->
+
+
+    <!-- ==================== SHOP SECTION ==================== -->
+    <!--
+        flex-wrap: wrap allows cards to flow to the next row
+        when there is not enough horizontal space — key for a responsive grid.
+    -->
+    <div class="shop-section">
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Find Gifts for Mom</h2>
+                <!-- background-image inline so each card has its own unique image -->
+                <div class="box-image" style="background-image: url('https://i.etsystatic.com/14302106/r/il/db591e/6311995401/il_fullxfull.6311995401_tuv4.jpg');"></div>
+                <p>Shop Mother's Day gifts</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniters</h2>
+                <div class="box-image" style="background-image: url('https://media.designcafe.com/wp-content/uploads/2021/12/27144355/design-cafe-modular-furniture-benefits.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Kitchen Essentials</h2>
+                <div class="box-image" style="background-image: url('https://bergnerhome.in/cdn/shop/articles/Header-Banner-1.png?v=1718542473&width=2048');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Decorative Items</h2>
+                <div class="box-image" style="background-image: url('https://tiimg.tistatic.com/fp/1/009/068/home-decorative-items-275.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>PCs and Accessories</h2>
+                <div class="box-image" style="background-image: url('https://m.media-amazon.com/images/I/71kjha9tNML._AC_UF1000,1000_QL80_.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Explore More in Sports</h2>
+                <div class="box-image" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/ExerciseAndFitness_1X._SY116_CB563192628_.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Level Up Gaming</h2>
+                <div class="box-image" style="background-image: url('https://images.jdmagicbox.com/quickquotes/listicle/listicle_1708569092834_yiyev_847x400.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Gaming Chairs</h2>
+                <div class="box-image" style="background-image: url('https://www.greensoul.online/cdn/shop/files/r1_650x.jpg?v=1756712404');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>iPhones</h2>
+                <div class="box-image" style="background-image: url('https://www.lifewire.com/thmb/nZq7WkWCAFyjH1WXbOpAMovIDbI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/iphone-air-colors-7401bfd0efcd41ac9c26db881144a196.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Cushion Comfort</h2>
+                <div class="box-image" style="background-image: url('https://www.greensoul.online/cdn/shop/files/r1_650x.jpg?v=1756712404');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Makeup-Kit</h2>
+                <div class="box-image" style="background-image: url('https://rukminim2.flixcart.com/image/480/640/xif0q/makeup-kit/s/3/v/-original-imagwfw3hteyxyf9.jpeg?q=90');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f5/Electronic_circuit.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Health and Personal Care</h2>
+                <div class="box-image" style="background-image: url('https://blog.nkgabc.com/wp-content/uploads/2023/04/Regulatory-Bodies-in-Healthcare.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Pet Care</h2>
+                <div class="box-image" style="background-image: url('https://www.buraqpets.com/cdn/shop/articles/the-truth-about-pet-care-in-india-a-vets-guide-for-new-pet-parents-3589824.png?v=1768315939&width=1024');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Garden Accessories</h2>
+                <div class="box-image" style="background-image: url('https://cdn.shopify.com/s/files/1/0553/5711/2435/files/17a0069fdac0f057f4a3d3be35fa4fe6_480x480.jpg?v=1719316654');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Footwear</h2>
+                <div class="box-image" style="background-image: url('https://images.jdmagicbox.com/v2/comp/hyderabad/j1/040pxx40.xx40.250825194755.i3j1/catalogue/yt-footwear-accessories-charminar-hyderabad-grocery-stores-9ocw0b2bqo.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Travel Accessories</h2>
+                <div class="box-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxMmp2R7-eDcp-mezNxdB_rKbzoK6pZWl4NA&s');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Jewellery</h2>
+                <div class="box-image" style="background-image: url('https://www.manyavar.com/dw/image/v2/BJZV_PRD/on/demandware.static/-/Library-Sites-ManyavarSharedLibrary/default/dw3253c2aa/Trending%20Designs%20in%20Gold%20for%20Your%20Wedding%20Jewellery%20Ranging%20from%20Mangtika%20to%20Payal_Blog%201.jpg');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>New Arrival in Toys</h2>
+                <div class="box-image" style="background-image: url('https://toybharat.com/cdn/shop/files/dinosuarwithbabytoy_8_71e5a801-2024-4092-9b8f-4283b1b45a70.jpg?v=1754390377&width=533');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Latest Fashion Trends</h2>
+                <div class="box-image" style="background-image: url('https://static.wixstatic.com/media/faa7e0_8dee8a6b31194c7aa56502db93102d07~mv2.png/v1/fill/w_568,h_362,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/faa7e0_8dee8a6b31194c7aa56502db93102d07~mv2.png');"></div>
+                <p>Shop More</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ==================== END SHOP SECTION ==================== -->
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+
+        <!-- Sign-in recommendation panel -->
+        <div class="foot-panel1">
+            <p class="rec-text">See personalized recommendations</p>
+            <button class="rec-btn">Sign in</button>
+            <p class="rec-small">
+                New customer? <a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex">Start here.</a>
+            </p>
+        </div>
+
+        <!-- Back to top -->
+        <div class="foot-panel2">
+            Back to top
+        </div>
+
+        <!-- Footer links — four columns using flexbox -->
+        <div class="foot-panel3">
+            <ul>
+                <p style = "font-size:2rem;">Get to Know Us</p>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+            </ul>
+            <ul>
+                <p style = "font-size:2rem;">Make Money with Us</p>
+                <a href="#">Sell Products on Amazon</a>
+                <a href="#">Sell on Amazon Business</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish With Us</a>
+                <a href="#">Host on Amazon Hub</a>
+                <a href="#">> See More MaKe Money with Us</a>
+            </ul>
+            <ul>
+                <p style = "font-size:2rem;">Amazon Payment Products</p>
+                <a href="#">Amazon Business Card</a>
+                <a href="#">Shop with Points</a>
+                <a href="#">Reload Your Balance</a>
+                <a href="#">Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p style = "font-size:2rem;">Let Us Help You</p>
+                <a href="#">Amazon and COVID-19</a>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates & Policies</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Manage Your Content & Devices</a>
+                <a href="#">Help</a>
+            </ul>
+        </div>
+
+        <!-- Footer logo + locale selectors -->
+        <div class="foot-panel4">
+            <div class="footer-container">
+
+                <div class="foot-logo"></div>
+
+                <!-- Language, currency and country selector boxes -->
+                <div class="three-icons">
+                    <div class="foot-box border">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>English</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="foot-box border">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        <span>INR - Indian Rupee</span>
+                    </div>
+                    <div class="foot-box border">
+                        <img src="https://flagcdn.com/w20/us.png">
+                        <span>United States</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright bar -->
+        <div class = "foot-panel5">
+            <div class="foot-pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Consumer Health Data Privacy Disclosure</a>
+                <a href="#">Your Ads Privacy Choices</a>
+                <div class = "footer-message">© 1996-2026, Amazon.com, Inc. or its affiliates</div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- ==================== END FOOTER ==================== -->
+
+</body>
+</html>
