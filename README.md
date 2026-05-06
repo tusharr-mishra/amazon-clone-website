@@ -16,15 +16,13 @@
 
 ---
 
-##  Screenshots
+## 📸 Screenshots
 
 | Section | Preview |
 |--------|---------|
-| Navbar + Hero | *(Add screenshot here)* |
-| Product Cards | *(Add screenshot here)* |
-| Footer | *(Add screenshot here)* |
-
-> To add screenshots: Take a screenshot, save it in a `/screenshots` folder, and update the paths above.
+| Navbar + Hero | ![Navbar](screenshots/navbar.png) |
+| Product Cards | ![Cards](screenshots/cards.png) |
+| Footer | ![Footer](screenshots/footer.png) |
 
 ---
 
