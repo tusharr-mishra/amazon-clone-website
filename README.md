@@ -12,7 +12,7 @@
 
 ## 🔗 Live Preview
 
->  **[View Live Demo](#)** ← *(Deploy to GitHub Pages or Netlify and paste link here)*
+>  **[View Live Demo]( https://tusharr-mishra.github.io/amazon-clone-website/)** 
 
 ---
 
